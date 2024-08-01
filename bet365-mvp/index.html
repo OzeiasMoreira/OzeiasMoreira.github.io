@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login e Registro</title>
+    <link rel="stylesheet" href="login/login.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="logo-text">Bet</span><span class="logo-highlight">365</span>
+        </div>
+    </header>
+    <main>
+        <section class="auth-content">
+            <div class="tabs">
+                <button class="tab-button active" data-tab="login">Entrar</button>
+                <button class="tab-button active" data-tab="register">Registrar</button>
+            </div>
+            <div class="form-container">
+                
+                <div id="login-form-container" class="form-section active">
+                    <h1>Entrar na sua Conta</h1>
+                    <form id="login-form">
+                        <label for="login-username">Usuário</label>
+                        <input type="text" id="login-username" placeholder="Usuário" required>
+
+                        <label for="login-password">Senha</label>
+                        <input type="password" id="login-password" placeholder="Senha" required>
+
+                        
+
+                        <button type="submit"><a href="menu/menu.html">Entrar</a></button>
+                    </form>
+                    <p><a href="#">Esqueci minha senha</a></p>
+                </div>
+
+    
+                <div id="register-form-container" class="form-section">
+                    <h1>Criar uma Conta</h1>
+                    <form id="register-form">
+                        <label for="register-username">Usuário</label>
+                        <input type="text" id="register-username" placeholder="Usuário" required>
+
+                        <label for="register-email">E-mail</label>
+                        <input type="email" id="register-email" placeholder="E-mail" required>
+
+                        <label for="register-form">CPF</label>
+                        <input type="document" id="register-form" placeholder="CPF" required>
+
+                        <label for="register-password">Senha</label>
+                        <input type="password" id="register-password" placeholder="Senha" required>
+
+                        <button type="submit"><a href="menu/menu.html">Registrar</a></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="login/login.js"></script>
+</body>
+</html>
